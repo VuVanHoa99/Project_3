@@ -5,6 +5,7 @@ import Loading from '../utils/loading/Loading';
 import axios from 'axios';
 import Filters from './Filters';
 import LoadMore from './LoadMore';
+import ProductCarousel from './productcarousel/ProductCarousel';
 
 
 
@@ -62,12 +63,13 @@ function Products() {
     return (
         <>
         <Filters />
+        
         {
             isAdmin && 
             <div className="delete-all">
-                <span>Select All</span>
+                <span>Chọn tất cả</span>
                 <input type="checkbox" checked={isCheck} onChange={checkAll}></input>
-                <button onClick={deleteAll}>Delete All</button>
+                <button onClick={deleteAll}>Xóa hết</button>
             </div>
         }
         <div className='products'>

@@ -26,21 +26,21 @@ function DetailProduct() {
                 <div className="box-detail">
                     <div className="row">
                         <h2>{detailProduct.title}</h2>
-                        <h6>#: {detailProduct.product_id}</h6>
+                        <h6>Mã: {detailProduct.product_id}</h6>
                     </div>
                     <span>$ {detailProduct.price}</span>
                     <p>{detailProduct.description}</p>
                     <p>{detailProduct.content}</p>
-                    <p>Sold: {detailProduct.sold}</p>
+                    <p>Đã bán: {detailProduct.sold}</p>
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)} >
-                        Buy Now
+                        Mua ngay
                     </Link>
                 </div>
             </div>
 
             <div>
-                <h2>Related Products</h2>
+                <h2>Sản phẩm liên quan</h2>
                 <div className="products">
                     {
                         products.map(product => {
