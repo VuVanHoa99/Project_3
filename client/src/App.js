@@ -12,9 +12,9 @@ function App() {
     <DataProvider>
       <Router>
         <div className="App">
-          <Header />
-          <MainPages />
-          <Footer />
+        <Header />
+        <MainPages />
+        <Footer />
         </div>
       </Router>
     </DataProvider>

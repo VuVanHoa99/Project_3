@@ -8,6 +8,7 @@ function ProductsApi() {
     const [category, setCategory] = useState('');
     const [sort, setSort] = useState('');
     const [search, setSearch] = useState('');
+    const [keyword, setKeyword] = useState('');
     const [page, setPage] = useState(1);
     const [result, setResult] = useState(0);
 
@@ -26,6 +27,7 @@ function ProductsApi() {
         category: [category, setCategory],
         sort: [sort, setSort],
         search: [search, setSearch],
+        keyword: [keyword, setKeyword],
         page: [page, setPage],
         result: [result, setResult]
     }

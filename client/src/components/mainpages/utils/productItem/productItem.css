@@ -1,7 +1,7 @@
 .product_card {
     max-width: 300px;
     overflow: hidden;
-    height: 500px;
+    min-height: 500px;
     padding: 15px;
     box-shadow: 0 0 15px #ddd;
     margin: 10px 0;
@@ -42,6 +42,7 @@
 }
 .row_btn a{
     width: 50%;
+    height: 100%;
     text-align: center; 
     text-transform: uppercase;
     color: white;
@@ -49,9 +50,14 @@
     letter-spacing: 2px;
     padding: 6px;
 }
-#btn_buy{
-    background: #555;
-    margin-right: 5px;
+#btn_del{
+   background-color: #555;
+
+} 
+.btn_img {
+    width: 50% !important;
+    height: 100% !important;
+    float: left;
 }
 #btn_view{
     background: teal;

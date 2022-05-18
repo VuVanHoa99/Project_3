@@ -32,9 +32,9 @@ function OrderHistory() {
 
         <div className="history-page">
 
-            <h2>History</h2>
+            <h2>Lịch sử</h2>
 
-            <h4>You have {history.length} ordered</h4>
+            <h4>Bạn đã đặt {history.length} sản phẩm</h4>
 
             <table>
                 <thead>

@@ -8,8 +8,8 @@ const initialState = {
     product_id: "",
     title: "",
     price: 0,
-    description: "Thực phẩm nông nghiệp VietGAP",
-    content: "Các loại nông sản của chúng tôi được nuôi trồng theo công nghệ Vi Sinh Hữu Hiệu (EM) của Nhật và được công nhận bởi Hiệp hội Công nghệ Vi sinh Hữu hiệu của Nhật Bản (EMRO). Đây là công nghệ nuôi trồng nông nghiệp không sử dụng hóa chất với quy trình sản xuất và phân phối khép kín, đảm bảo chất lượng của sản phẩm từ khi xuất xưởng đến tận tay người tiêu dùng. Sản phẩm rất đa dạng, từ các loại thịt, cá, trứng đến rau củ quả, gạo, cây gia vị...",
+    description: "Máy tính sinh viên",
+    content: "",
     category: "",
     _id: "",
 }
@@ -139,37 +139,37 @@ function CreateProduct() {
 
             <form onSubmit={handleSubmit}>
                 <div className="row">
-                    <label htmlFor="product_id">Product ID</label>
+                    <label htmlFor="product_id">Mã sản phẩm</label>
                     <input type="text" name="product_id" id="product_id" required
                     value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="price">Price</label>
+                    <label htmlFor="price">Giá</label>
                     <input type="number" name="price" id="price" required
                     value={product.price} onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Tên sản phẩm</label>
                     <input type="text" name="title" id="title" required
                     value={product.title} onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description">Mô tả</label>
                     <textarea type="text" name="description" id="description" required
                     value={product.description} rows="5" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="content">Content</label>
+                    <label htmlFor="content">Thông số sản phẩm</label>
                     <textarea type="text" name="content" id="content" required
                     value={product.content} rows="7" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="categories">Categories: </label>
+                    <label htmlFor="categories">Loại: </label>
                     <select name="category" value={product.category} onChange={handleChangeInput} >
                         <option value="">Please select a category</option>
                         {

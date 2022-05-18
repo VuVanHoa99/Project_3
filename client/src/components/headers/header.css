@@ -7,7 +7,7 @@ header {
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    background-color: #f1f1f1;
+    background-color: #243a76;
 }
 
 header .logo {
@@ -16,7 +16,7 @@ header .logo {
 
 header a{
     text-transform: uppercase;
-    color: #555;
+    color: white;
 }
 
 header ul li {
